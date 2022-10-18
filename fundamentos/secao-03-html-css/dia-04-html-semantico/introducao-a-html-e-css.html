@@ -8,15 +8,15 @@
   <body>
     <header>
         <h1>Soco a 80km/h: Conheça o Stomatopoda</h1>
-        <nav>
-            <a class="button" href="#">Página Inicial</a>
-            <a class="button" href="#">Sobre</a>
-            <a class="button" href="#">Contato</a>
+        <nav id="#home">
+            <div class="button"><a href="#home">Página Inicial</a></div>
+            <div class="button"><a href="#about">Sobre</a></div>
+            <div class="button"><a href="#contact">Contato</a></div>
         </nav>
     </header>
     <main class="container">
         <article>
-            <section>
+            <section id="about">
                 <h3>Informações Gerais</h3>
                 <p>Nome científico: <i>Odontodactylus scyllarus</i>.</p>
                 <table>
@@ -46,17 +46,19 @@
                     </tr>
                 </table>
             </section>
-            <section>
-                <h3>Saca a visão desse camarada</h3>
-                <p>Enquanto nós reles mortais temos apenas <b>três receptores </b> de cores (vermelho, verde e azul), o Stomatopoda tem <b>12 receptores de cores primáriase mais 4</b> que filtram a luz.</p>
-                <img width="350px" src="./assets/TELD-077_Image_5.jpg">
+            <section class="curiosity">
+                <div>
+                    <h3>Saca a visão desse camarada</h3>
+                    <p>Enquanto nós reles mortais temos apenas <b>três receptores </b> de cores (vermelho, verde e azul), o Stomatopoda tem <b>12 receptores de cores primáriase mais 4</b> que filtram a luz.</p>
+                    <img width="350px" src="./assets/TELD-077_Image_5.jpg">
+                </div>
+                <div>
+                    <h3>O one punch man do mar</h3>
+                    <p>Quem não assistiu vai assistir porque o saitama sensei mandou. Esse camarão finho, colorido e pequeno é um verdadeiro Rocky Balboa nivel Toguro usando 100%.</br> Sim o soco dele quebra tudo com seu impacto de <span class="highlight">600 N/cm²</span>, para quem ainda não entendeu, é como levar um tiro de um calibre .22</p>
+                    <img width="350px" src="./assets/colage111.webp">
+                </div>
             </section>
-            <section>
-                <h3>O one punch man do mar</h3>
-                <p>Quem não assistiu vai assistir porque o saitama sensei mandou. Esse camarão finho, colorido e pequeno é um verdadeiro Rocky Balboa nivel Toguro usando 100%.</br> Sim o soco dele quebra tudo com seu impacto de <span class="highlight">600 N/cm²</span>, para quem ainda não entendeu, é como levar um tiro de um calibre .22</p>
-                <img width="350px" src="./assets/colage111.webp">
-            </section>
-            <section class="video-wrapper">
+            <section class="references">
                 <h3>Referências</h3>
                 <ul>
                     <li>https://possibility.teledyneimaging.com/mona-lisa/</li>
@@ -65,12 +67,13 @@
             </section>
         </article>
         <aside class="side-bar">
+            <h3>Veja mais sobre esse camarãozinho</h3>
             <a href="https://www.youtube.com/watch?v=E0Li1k5hGBE">Link para ver o video no youtube</a>
             <iframe id="hidevideo" src="https://www.youtube.com/embed/E0Li1k5hGBE?autoplay=1&controls=0" title="O camarão one punch"></iframe>
             <iframe src="https://www.youtube.com/embed/E0Li1k5hGBE" title="Mantis Shrimp Packs a Punch | Predator in Paradise" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </aside>
     </main>
-    <footer>
+    <footer id="#contact">
         <p>"Conteúdo compilado por Roberta Nogara, 2022".</p>
     </footer>
   </body>
