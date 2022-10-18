@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    overflow: auto;
+    color: aliceblue;
+    text-decoration: none;
+}
+body {
+    background-color: rgb(24, 138, 138);
+}
+h1 {
+    text-align: center;
+    margin: 30px;
+    color: coral;
+}
+.button {
+    width: 200px;
+    height: 25px;
+    background-color: aliceblue;
+    display: inline-block;
+    border-radius: 20px;
+    text-align: center;
+    align-items: center;
+}
+a {
+    color: seagreen;
+}
+.container {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+h3 {
+    color: coral;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 20px;
+    width: 350px;
+}
+#hidevideo {
+    display: none;
+}
+nav > div {
+    margin: 30px;
+}
+a{
+    margin: 10px;
+}
+p {
+    text-align: justify;
+    width: 350px;
+    margin: 10px;
+}
+article{
+    margin: 20px;
+    border: 1px solid white;
+    padding: 10px;
+}
+img {
+    margin: 10px;
+}
+#about{
+    width: 500px;
+    display: block;
+    margin: 0 25%;
+}
+.curiosity {
+    display: flex;
+    flex-direction: row;
+}
+.side-bar{
+    width: 380px;
+    display: block;
+    margin: 30px;
+}
+footer{
+    width: 100%;
+}
