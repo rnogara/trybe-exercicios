@@ -1,7 +1,6 @@
 * {
     margin: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    overflow: auto;
     color: aliceblue;
     text-decoration: none;
 }
@@ -30,15 +29,12 @@ a {
     display: flex;
     flex-direction: row;
 }
-h3 {
+h2 {
     color: coral;
     font-size: 20px;
     text-transform: uppercase;
     margin: 20px;
     width: 350px;
-}
-#hidevideo {
-    display: none;
 }
 nav > div {
     margin: 30px;
@@ -73,6 +69,7 @@ img {
     display: block;
     margin: 30px;
 }
-footer{
+footer > p{
     width: 100%;
+    text-align: center;
 }
