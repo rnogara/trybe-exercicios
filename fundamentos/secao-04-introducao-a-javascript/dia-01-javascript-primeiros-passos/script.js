@@ -51,3 +51,50 @@ const modulo = a % b;
  } else {
     console.log('ops... algo deu errado');
  }
+ 
+ //Será que forma um triangulo?
+ const i = 30;
+ const j = 45;
+ const k = 105;
+
+ const somaAngulos = i + j + k;
+
+ if(somaAngulos === 180){
+    console.log(true);
+ } else if (somaAngulos !== 180){
+    console.log(false);
+ } else {
+    console.log('ops... algo deu errado');
+ }
+
+ //Como essa peça de xadrez se movimenta?
+ const l = '';
+
+ switch(l){
+    case 'peão':
+    case 'Peão':
+        console.log('uma casa a frente');
+        break;
+    case 'torre':
+    case 'Torre':
+        console.log('qualquer quantidade de casas a frente, atrás ou dos lados');
+        break;
+    case 'cavalo':
+    case 'Cavalo':
+        console.log('duas casas a frente ou atrás posteriormente mais uma casa a direita ou a esquerda');
+        break;
+    case 'bispo':
+    case 'Bispo':
+        console.log('qualquer quantidade de casas nas diagonais');
+        break;
+    case 'rainha':
+    case 'Rainha':
+        console.log('qualquer quantidade de casas a frente, atrás, dos lados ou nas diagonais');
+        break;
+    case 'rei':
+    case 'Rei':
+        console.log('uma casa a frente, atrás, dos lados ou nas diagonais');
+        break;
+    default:
+        console.log('esta não é uma peça válida');
+ }
