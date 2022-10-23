@@ -68,7 +68,7 @@ const modulo = a % b;
  }
 
  //Como essa peça de xadrez se movimenta?
- const l = '';
+ const l = 'cavalo';
 
  switch(l){
     case 'peão':
@@ -118,7 +118,7 @@ const modulo = a % b;
     console.log('Nota inválida, por favor coloque um número de 0 a 100');
  }
 
- //Há um par entre nós
+//Há um par entre nós
 const n = 3;
 const o = 4;
 const p = 7;
@@ -128,3 +128,54 @@ if (n % 2 === 0 || o % 2 === 0 || p % 2 === 0){
 } else {
     console.log(false);
 }
+
+//Há um ímpar entre nós
+if (n % 2 !== 0 || o % 2 !== 0 || p % 2 !== 0){
+    console.log(true);
+} else {
+    console.log(false);
+}
+
+//Lucra ou não lucra?
+const q = 50.95;
+const r = 67.50;
+
+const custoMil = q * 1000;
+const custoTotal = custoMil + (custoMil * 0.2);
+
+const vendaMil = r * 1000;
+const lucro = vendaMil - custoTotal;
+
+if (q < 0 || r < 0 || typeof q !== "number" || typeof r !== "number"){
+    console.log('Valor inválido, favor colocar um número acima de zero')
+} else {
+    console.log('R$' + lucro + ',00');
+}
+
+//Salário bruto x salário líquido
+const s = 3500.70;
+
+if (s <= 1556.94){
+    var salarioBase = s - (s * 0.08);
+} else if (s >= 1556.95 && s <= 2594.92){
+    var salarioBase = s - (s * 0.09);
+} else if (s >= 2594.93 && s <= 5189.82){
+    var salarioBase = s - (s * 0.11);
+} else if (s > 5189.82){
+    var salarioBase = s - 570.88;
+}
+
+if (salarioBase <= 1903.98){
+    var salarioLiquido = salarioBase;
+} else if (salarioBase >= 1903.99 && salarioBase <= 2826.65){
+    var salarioLiquido = salarioBase - ((salarioBase * 0.075) - 142.8);
+} else if (salarioBase >= 2826.66 && salarioBase <= 3751.05){
+    var salarioLiquido = salarioBase - ((salarioBase * 0.15) - 354.8);
+} else if (salarioBase >= 3751.06 && salarioBase <= 4664.68){
+    var salarioLiquido = salarioBase - ((salarioBase * 0.225) - 636.13);
+} else if (salarioBase > 4664.68){
+    var salarioLiquido = salarioBase - ((salarioBase * 0.275) - 869.36);
+}
+
+const resultado = salarioLiquido.toFixed(2);
+console.log('Seu salário bruto é de R$' + s.toFixed(2) + ' e seu salário líquido é de R$' + resultado + '.' )
