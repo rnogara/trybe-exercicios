@@ -41,7 +41,24 @@ if (media > 20){
 console.log('');
 console.log('O maior numero dentro do array é: ' + maiorNumero);
 
+console.log('');
 console.log('Existem ' + quantidadeImpares + ' números ímpares dentro do array');
 console.log(mensagemSemImpar);
 
 console.log('O menor numero dentro do array é: ' + menorNumero);
+
+let newNumbers = [];
+for (let n = 1; n <= 25; n += 1){
+  newNumbers.push(n);
+}
+console.log('');
+console.log('Novo Array:')
+console.log(newNumbers);
+
+console.log('');
+console.log('Divisão de cada numero do novo array por dois:')
+var divisao = 0;
+for (let index = 0; index < newNumbers.length; index += 1){
+  divisao = newNumbers[index] /2;
+  console.log(divisao);
+}
