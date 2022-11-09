@@ -72,23 +72,23 @@
     <form id="forms">
       <section id="personal-info">
         <label>Nome Completo:</label>
-        <input type="text">
+        <input type="text" minlength="10" maxlength="40">
         <br>
         <label>E-mail:</label>
-        <input type="email">
+        <input type="email" minlength="10" maxlength="50">
       </section>
       <section id="prefered-destiny">
         <label>Destino Preferido:</label>
         <br>
-        <label><input type="radio" name="destiny">Alemanha</label>
-        <label><input type="radio" name="destiny">Islândia</label>
-        <label><input type="radio" name="destiny">Taiwan</label>
-        <label><input type="radio" name="destiny">Japão</label>
+        <label><input type="radio" name="destiny" id="destiny1">Cidade</label>
+        <label><input type="radio" name="destiny" id="destiny2">Campo</label>
+        <label><input type="radio" name="destiny" id="destiny3">Praia</label>
+        <label><input type="radio" name="destiny" id="destiny3">Montanhas</label>
       </section>
       <section id="why">
-        <label>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</label>
+        <label name="thirty-reasons-why">Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</label>
         <br>
-        <textarea></textarea>
+        <textarea id="why-travel" name="thirty-reasons-why" maxlength="500" rows="10"></textarea>
       </section>
       <section id="options">
         <label>Qual a melhor data para realizar sua viagem?<br><br><input type="date"></label>
@@ -98,7 +98,7 @@
         <br>
         <label>Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros  <input type="checkbox"></label>
       </section>
-      <button type="submit">Enviar</button>
+      <button type="submit" id="send">Enviar</button>
       <button type="reset">Limpar dados</button>
     </form>
   </main>
@@ -106,6 +106,10 @@
     <p>Nada a declarar, eu não tenho nada a ver com isso, não saia me cobrando viagens</p>
   </footer>
   <script>
+    const buttonSend = document.getElementById('send');
+    buttonSend.addEventListener('submit', (event) => {
+      event.preventDefault();
+    })
   // (Bônus) A TrybeTrip precisa muito de fotos para divulgar seus concursos. Tendo isso em mente, faça com que somente quem autorizar 
   // o uso de imagens possa enviar suas informações.
   // (Bônus) Faça a validação dos campos com limite de caracteres. Caso não estejam dentro do esperado ao clicar no botão de submit, 
