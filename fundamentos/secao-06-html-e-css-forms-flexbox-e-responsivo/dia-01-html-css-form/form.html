@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TrypeTrip</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: bisque;
+      color: green;
+    }
+    header {
+      width: 100%;
+      background-color: green;
+      color: beige;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      display: table;
+      align-items: center;
+      text-align: center;
+    }
+    p {
+      font-size: 10px;
+      margin-bottom: 30px;
+    }
+    form {
+      width: 80%;
+      margin: 30px auto;
+    }
+    footer {
+      width: 100%;
+      text-align: center;
+    }
+    #personal-info, #prefered-destiny, #why {
+      width: 350px;
+      display: flex;
+      flex-direction: column;
+      margin: 40px 0;
+    }
+    #options {
+      width: 700px;
+      display: flex;
+      flex-direction: column;
+      margin: 40px 0;
+      text-align: left;
+    }
+    button {
+      width: 150px;
+      height: 40px;
+      font-size: 20px;
+      border-style: none;
+      background-color: green;
+      color: white;
+      border-radius: 30px;
+      margin: 30px 40px 30px 0;
+    }
+    button:hover {
+      background-color: bisque;
+      color: green;
+      border: 1px solid green;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Concurso Trybe Trip</h1>
+    <p>concorra a viagem dos seus sonhos, pela bagatela de fazer seu próprio formulário</p>
+  </header>
+  <main>
+    <form id="forms">
+      <section id="personal-info">
+        <label>Nome Completo:</label>
+        <input type="text">
+        <br>
+        <label>E-mail:</label>
+        <input type="email">
+      </section>
+      <section id="prefered-destiny">
+        <label>Destino Preferido:</label>
+        <br>
+        <label><input type="radio" name="destiny">Alemanha</label>
+        <label><input type="radio" name="destiny">Islândia</label>
+        <label><input type="radio" name="destiny">Taiwan</label>
+        <label><input type="radio" name="destiny">Japão</label>
+      </section>
+      <section id="why">
+        <label>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</label>
+        <br>
+        <textarea></textarea>
+      </section>
+      <section id="options">
+        <label>Qual a melhor data para realizar sua viagem?<br><br><input type="date"></label>
+        <br>
+        <br>
+        <label>Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?  <input type="checkbox"></label>
+        <br>
+        <label>Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros  <input type="checkbox"></label>
+      </section>
+      <button type="submit">Enviar</button>
+      <button type="reset">Limpar dados</button>
+    </form>
+  </main>
+  <footer>
+    <p>Nada a declarar, eu não tenho nada a ver com isso, não saia me cobrando viagens</p>
+  </footer>
+  <script>
+  // (Bônus) A TrybeTrip precisa muito de fotos para divulgar seus concursos. Tendo isso em mente, faça com que somente quem autorizar 
+  // o uso de imagens possa enviar suas informações.
+  // (Bônus) Faça a validação dos campos com limite de caracteres. Caso não estejam dentro do esperado ao clicar no botão de submit, 
+  // um alerta deve ser mostrado com a mensagem: ‘Dados Inválidos’. Caso contrário, a mensagem ‘Dados enviados com sucesso! 
+  // Obrigado por participar do concurso TrybeTrip.’ deverá aparecer na tela.
+  </script>
+</body>
+</html>
