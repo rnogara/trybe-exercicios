@@ -92,3 +92,28 @@ nav > ul {
   }
 }
 
+@media screen and (min-width: 768px) {
+  nav {
+    width: 50%;
+    margin: 0 auto;
+  }
+  
+  aside {
+    display: flex;
+    align-self: flex-start;
+    border: 1px dotted black;
+    padding: 10px;
+  }
+
+  .main-content {
+    padding: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  nav {
+    width: 30%;
+    margin: 0 auto;
+  }
+  
+}
