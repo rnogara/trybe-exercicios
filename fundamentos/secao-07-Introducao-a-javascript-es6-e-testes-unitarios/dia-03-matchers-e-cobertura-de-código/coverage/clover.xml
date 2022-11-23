@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1669165929068" clover="3.2.0">
-  <project timestamp="1669165929068" name="All files">
-    <metrics statements="18" coveredstatements="18" conditionals="10" coveredconditionals="10" methods="3" coveredmethods="3" elements="31" coveredelements="31" complexity="0" loc="18" ncloc="18" packages="2" files="3" classes="3"/>
+<coverage generated="1669166457002" clover="3.2.0">
+  <project timestamp="1669166457002" name="All files">
+    <metrics statements="25" coveredstatements="25" conditionals="14" coveredconditionals="14" methods="4" coveredmethods="4" elements="43" coveredelements="43" complexity="0" loc="25" ncloc="25" packages="2" files="4" classes="4"/>
     <package name="dia-03-matchers-e-cobertura-de-código">
-      <metrics statements="9" coveredstatements="9" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
+      <metrics statements="16" coveredstatements="16" conditionals="8" coveredconditionals="8" methods="3" coveredmethods="3"/>
       <file name="exercicio01.js" path="/home/roberta/Documentos/Trybe/trybe-exercicios/fundamentos/secao-07-Introducao-a-javascript-es6-e-testes-unitarios/dia-03-matchers-e-cobertura-de-código/exercicio01.js">
         <metrics statements="4" coveredstatements="4" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
         <line num="2" count="4" type="cond" truecount="4" falsecount="0"/>
@@ -18,6 +18,16 @@
         <line num="9" count="4" type="stmt"/>
         <line num="12" count="2" type="stmt"/>
         <line num="14" count="2" type="stmt"/>
+      </file>
+      <file name="exercicio04.js" path="/home/roberta/Documentos/Trybe/trybe-exercicios/fundamentos/secao-07-Introducao-a-javascript-es6-e-testes-unitarios/dia-03-matchers-e-cobertura-de-código/exercicio04.js">
+        <metrics statements="7" coveredstatements="7" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="2" type="cond" truecount="4" falsecount="0"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
       </file>
     </package>
     <package name="dia-03-matchers-e-cobertura-de-código.fixacao-testes">
