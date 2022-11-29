@@ -24,8 +24,4 @@ const musicas = [
 
 // Adicione seu código aqui
 
-const idValues = [];
-musicas.forEach((obj, i) => {
-  idValues.push(musicas[i].id);
-});
-idValues.find((id) => id === '31031685');
+musicas.find((song) => song.id === '31031685');
