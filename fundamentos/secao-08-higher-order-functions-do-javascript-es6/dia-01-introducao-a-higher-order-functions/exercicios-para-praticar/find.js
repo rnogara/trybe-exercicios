@@ -4,7 +4,7 @@ const numbers = [19, 21, 30, 3, 45, 22, 15];
 
 // Adicione seu código aqui
 
-numbers.find((n) => n % 3 === 0 && n % 5 === 0);
+const num3and5 = numbers.find((n) => n % 3 === 0 && n % 5 === 0);
 
 // Utilize o find para encontrar o primeiro nome com cinco letras, caso ele exista
 
@@ -12,7 +12,7 @@ const names = ['João', 'Irene', 'Fernando', 'Maria'];
 
 // Adicione seu código aqui
 
-names.find((l) => l.length === 5);
+const nameWith5 = names.find((l) => l.length === 5);
 
 // Utilize o find para encontrar a música com id igual a '31031685', caso ela exista
 
@@ -24,4 +24,6 @@ const musicas = [
 
 // Adicione seu código aqui
 
-musicas.find((song) => song.id === '31031685');
+const findThisSong = musicas.find((song) => song.id === '31031685');
+
+console.log(num3and5, nameWith5, findThisSong);
