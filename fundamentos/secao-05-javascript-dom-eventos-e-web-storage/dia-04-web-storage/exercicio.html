@@ -43,13 +43,13 @@
       flex-direction: column;
       justify-content: center;
     }
-    .content {
+    section {
       line-height: 35px;
     }
   </style>
 </head>
 <body>
-  <main>
+  <main id="web-page">
     <header>
       <div class="buttons-wrapper">
         <p>Cor de Fundo</p>
@@ -63,7 +63,7 @@
         <button id="font-black">Preto</button>
         <button id="font-white">Branco</button>
         <button id="font-blue">Azul</button>
-        <button id="font-yellow">Amarelo</button>
+        <button id="font-orange">Laranja</button>
       </div>
       <div class="buttons-wrapper">
         <p>Tamanho da fonte</p>
@@ -85,18 +85,18 @@
         <button id="font-style-cn">Courrier New</button>
       </div>
     </header>
-    <div class="content">
+    <section>
       <h1><strong>Lorem Ipsum</strong></h1>
       <h3><strong><em>Unde sequi adipisci molestias quis, odit nam officiis cumque corrupti</em></strong></h3>
       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, sequi dolores iusto ipsa minima corrupti aperiam labore odio at, eligendi a, praesentium atque eum perspiciatis alias quisquam minus vero magni!
       </p>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, expedita accusantium? Harum totam nulla culpa consectetur libero quibusdam nesciunt. Perferendis incidunt rem quo consequuntur. Aliquid ratione doloribus dolore suscipit harum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate culpa asperiores maxime optio repudiandae similique architecto, officiis quae libero, quasi distinctio dolorem consequatur nostrum, accusantium cum quas incidunt molestias dolorum?</p>
-    </div>
+    </section>
   </main>
   <script>
-    const elementBody = document.getElementsByTagName('body')
-    const elementMain = document.getElementsByTagName('main')
-    const content = document.getElementsByClassName('content')
+    const elementBody = document.body;
+    const elementMain = document.querySelector('main');
+    const content = document.querySelector('section');
 
     window.onload = () => {
       const storeBackgroundColor = (color) => {
@@ -151,9 +151,9 @@
       fontBlue.addEventListener('click', (event) => {
         storeFontColor('blue')
       })
-      let fontYellow = document.getElementById('font-yellow')
-      fontYellow.addEventListener('click', (event) => {
-        storeFontColor('yellow')
+      let fontOrange = document.getElementById('font-orange')
+      fontOrange.addEventListener('click', (event) => {
+        storeFontColor('darkorange')
       })
 
       //Tamanho da Fonte
@@ -189,15 +189,15 @@
       fontFamilyTnr.addEventListener('click', (event) => {
         storeFontFamily('Times New Roman')
       })
-      let fontFamilyArial = document.getElementById('font-style-tnr')
+      let fontFamilyArial = document.getElementById('font-style-arial')
       fontFamilyArial.addEventListener('click', (event) => {
         storeFontFamily('Arial')
       })
-      let fontFamilyLs = document.getElementById('font-style-tnr')
+      let fontFamilyLs = document.getElementById('font-style-ls')
       fontFamilyLs.addEventListener('click', (event) => {
         storeFontFamily('Lucida Sans')
       })
-      let fontFamilyCn = document.getElementById('font-style-tnr')
+      let fontFamilyCn = document.getElementById('font-style-cn')
       fontFamilyCn.addEventListener('click', (event) => {
         storeFontFamily('Courrier New')
       })
