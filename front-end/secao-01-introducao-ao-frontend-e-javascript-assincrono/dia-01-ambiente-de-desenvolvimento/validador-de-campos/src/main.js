@@ -3,9 +3,9 @@ import validator from 'validator';
 const inputDeTexto = document.querySelector('#value');
 const btn = document.querySelector('#btn');
 const selector = document.querySelector('#option');
-const answer = document.querySelector("#answer");
+const answer = document.querySelector('#answer');
 
-answer.setAttribute("alt", `${answer.innerHTML}`);
+answer.setAttribute('alt', `${answer.innerHTML}`);
 const UUID_VERSION = 4;
 
 btn.addEventListener('click', (event) => {
