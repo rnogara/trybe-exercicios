@@ -1,0 +1,96 @@
+/* Crie um layout específico para telas pequenas (smartphones); 📱
+
+Crie um layout específico para telas médias (tablets); 📱
+
+Crie um layout específico para impressão (impressoras, salvar como PDF, etc). 🖨 */
+
+* {
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: aliceblue;
+    text-decoration: none;
+}
+body {
+    background-color: rgb(24, 138, 138);
+}
+footer > p{
+    width: 100%;
+    text-align: center;
+}
+
+@media screen and (max-width: 500px){
+    
+}
+@media screen and (max-width: 500px){
+    
+}
+@media screen and (max-width: 500px){
+    
+}
+@media print {
+    
+}
+
+h1 {
+    text-align: center;
+    margin: 30px;
+    color: coral;
+}
+.button {
+    width: 150px;
+    height: 25px;
+    background-color: aliceblue;
+    display: inline-block;
+    border-radius: 20px;
+    text-align: center;
+}
+a {
+    text-align: center;
+    line-height: 28px;
+    color: seagreen;
+}
+.container {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+h2 {
+    color: coral;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 20px;
+    width: 350px;
+}
+nav > div {
+    margin: 30px;
+}
+a{
+    margin: 10px;
+}
+p {
+    text-align: justify;
+    width: 350px;
+    margin: 10px;
+}
+article{
+    margin: 20px;
+    border: 1px solid white;
+    padding: 10px;
+}
+img {
+    margin: 10px;
+}
+#about{
+    width: 500px;
+    display: block;
+    margin: 0 25%;
+}
+.curiosity {
+    display: flex;
+    flex-direction: row;
+}
+.side-bar{
+    width: 380px;
+    display: block;
+    margin: 30px;
+}
