@@ -1,0 +1,18 @@
+* {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 50px;
+}
+body {
+  margin: 0;
+  background-color: darkslateblue;
+  color: rgb(223, 187, 174);
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+select {
+  margin: 50px;
+}
