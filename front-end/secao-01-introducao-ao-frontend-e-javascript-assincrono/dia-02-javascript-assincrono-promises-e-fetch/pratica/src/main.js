@@ -1,47 +1,22 @@
 import './styles.css';
 
-import {
-  fillUsersSelect,
-  fillPosts,
-  fillFeaturedPostComments,
-  clearPageData,
-  fillErrorMessage,
-} from './utils/updateUI';
+const img = document.querySelector('#hero-img');
+const name = document.querySelector('#hero-name');
+const btn = document.querySelector('#randomBtn');
 
-const usersSelect = document.querySelector('#users-select');
+const BASE_URL = 'https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/id';
+const MAX_HEROES = 800;
 
-const USERS_API = 'https://dummyjson.com/users';
-// faça a lógica para pegar as informações das pessoas usuárias e preencher o select aqui.
-fetch(USERS_API).then((response) => response.json())
-  .then((data) => {
-    const { users } = data;
-    fillUsersSelect(users);
-});
+const randomId = () => Math.floor(Math.random() * MAX_HEROES);
 
-usersSelect.addEventListener('change', () => {
-  clearPageData();
-
-  // faça a lógica para pegar as informações dos posts da pessoa selecionada e dos comentários do post destacado aqui.
-  usersSelect.addEventListener('change', () => {
-    clearPageData();
-    const POSTS_API = `https://dummyjson.com/posts/user/${usersSelect.value}`;
-    fetch(POSTS_API)
-      .then((response) => response.json())
-      .then((data) => {
-        const { posts } = data;
-        fillPosts(posts);
-        const [featuredPost] = posts;
-        const COMMENTS_API = `https://dummyjson.com/posts/${featuredPost.id}/comments`;
-        return fetch(COMMENTS_API);
-      })
-      .then((res) => res.json())
-      .then((data) => {
-        const { comments } = data;
-        fillFeaturedPostComments(comments);
-      })
-      .catch((error) => {
-        fillErrorMessage('Erro ao recuperar informações');
-        console.log(error.message);
-      });
-  });
+btn.addEventListener('click', (event) => {
+  event.preventDefault();
+  const id = randomId();
+  fetch(`${BASE_URL}/${id}.json`)
+    .then((result) => result.json())
+    .then((data) => {
+      img.src = data.images.lg;
+      name.innerHTML = data.name;
+    })
+    .catch((error) => window.alert(error.message));
 });

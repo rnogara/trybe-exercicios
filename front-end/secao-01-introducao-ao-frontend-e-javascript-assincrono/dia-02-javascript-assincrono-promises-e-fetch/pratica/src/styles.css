@@ -1,18 +1,27 @@
 * {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: 50px;
 }
 body {
   margin: 0;
-  background-color: darkslateblue;
-  color: rgb(223, 187, 174);
+  background-color: rgb(32, 32, 32);
+  color: whitesmoke;
 }
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 10%;
 }
-select {
-  margin: 50px;
+h1 {
+  font-size: 50px;
+}
+p, button {
+  font-size: 30px;
+}
+h1, img, p, button {
+  margin: 20px;
+}
+#hero-img {
+  width: 400px;
 }
