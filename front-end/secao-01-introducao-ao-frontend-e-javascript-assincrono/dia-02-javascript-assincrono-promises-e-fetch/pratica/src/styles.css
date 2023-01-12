@@ -1,0 +1,27 @@
+* {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+body {
+  margin: 0;
+  background-color: rgb(32, 32, 32);
+  color: whitesmoke;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10%;
+}
+h1 {
+  font-size: 50px;
+}
+p, button {
+  font-size: 30px;
+}
+h1, img, p, button {
+  margin: 20px;
+}
+#hero-img {
+  width: 400px;
+}

@@ -1,0 +1,27 @@
+* {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+body {
+  margin: 0;
+  background-color: rgb(32, 32, 32);
+  color: whitesmoke;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+h1 {
+  font-size: 50px;
+}
+button {
+  font-size: 30px;
+}
+h1, img, button {
+  margin: 20px;
+}
+#pet-img {
+  width: 600px;
+}
