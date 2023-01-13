@@ -3,13 +3,14 @@ import Swal from 'sweetalert2';
 
 const searchBtn = document.querySelector('#search-btn');
 const resultWrapper = document.querySelector('#result-wrapper');
-const result = document.createElement('p');
 const cepSize = 8;
 let cepNoHifen = '';
 
 searchBtn.addEventListener('click', async (e) => {
   e.preventDefault();
-  result.innerHTML = '';
+  while (resultWrapper.hasChildNodes()) {
+    resultWrapper.removeChild(resultWrapper.lastChild);
+  }
   try {
     let searchedCep = document.querySelector('#inputCep').value;
     if (searchedCep.includes('-')) {
@@ -28,14 +29,18 @@ searchBtn.addEventListener('click', async (e) => {
     const keys = Object.keys(data);
     keys.forEach((element) => {
       if (data[element] !== '') {
+        const result = document.createElement('p');
         resultWrapper.appendChild(result);
-        result.innerHTML += `${element}: ${data[element]}`;
+        result.innerHTML = `<strong>${element}</strong>: ${data[element]}`;
       }
     });
   } catch (error) {
     Swal.fire(error.message);
   }
-  if (result.innerHTML === 'erro: true') {
+  if (document.querySelector('p').innerHTML === '<strong>erro</strong>: true') {
+    while (resultWrapper.hasChildNodes()) {
+      resultWrapper.removeChild(resultWrapper.lastChild);
+    }
     return Swal.fire({
       icon: 'error',
       text: 'Cep inválido!',
