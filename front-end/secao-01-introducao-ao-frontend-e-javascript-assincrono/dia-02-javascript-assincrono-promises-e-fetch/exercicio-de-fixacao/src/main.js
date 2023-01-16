@@ -16,7 +16,7 @@ fetch(USERS_API).then((response) => response.json())
   .then((data) => {
     const { users } = data;
     fillUsersSelect(users);
-});
+  });
 
 usersSelect.addEventListener('change', () => {
   clearPageData();
