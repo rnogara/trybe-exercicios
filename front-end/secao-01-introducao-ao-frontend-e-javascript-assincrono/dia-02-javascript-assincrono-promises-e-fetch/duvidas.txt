@@ -1,3 +1,0 @@
- - No exercicio de fixação tem um erro no import do ./utils ... 
- - No exercico de pratica aparece um erro no alerta
- 
