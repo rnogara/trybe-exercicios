@@ -1,5 +1,7 @@
 import React from "react";
 import './Forms.css';
+import InputFeedback from "./InputFeedback";
+import InputName from "./InputName";
 
 class Forms extends React.Component {
   state = {
@@ -9,6 +11,8 @@ class Forms extends React.Component {
     feedback: '',
     check: '',
     src: '',
+    error: '',
+    formularioComErros: true,
   };
 
   handleChange = ({ target }) => {
@@ -17,6 +21,7 @@ class Forms extends React.Component {
     this.setState({
       [name]: value,
     });
+    this.handleError();
   }
 
   handleBgColor = (e) => {
@@ -32,8 +37,22 @@ class Forms extends React.Component {
     });
   }
 
+  handleError = () => {
+    if(!this.state.age || !this.state.feedback || !this.state.name) {
+      this.setState({
+        error: 'Algum dado obrigatório não está preenchido',
+        formularioComErros: true,
+      });
+    } else {
+      this.setState({
+        error: '',
+        formularioComErros: false,
+      });
+    };
+  }
+
   render() {
-    const { name, age, feedback, check, src } = this.state;
+    const { name, age, feedback, check, src, error } = this.state;
     return(
       <form>
         <label htmlFor="color">Escolha uma cor: <select id="color" name="color" onChange={ this.handleBgColor }>
@@ -42,13 +61,7 @@ class Forms extends React.Component {
           <option value='bisque' className="bisque">  </option>
           <option value='lightgreen' className="lightgreen">  </option>
           </select></label>
-        <label htmlFor="name">Nome: <input 
-          name="name" 
-          id="name" 
-          type="text" 
-          value={ name } 
-          onChange={ this.handleChange } />
-        </label>
+        <InputName name={ name } handleChange={ this.handleChange } />
         <label htmlFor="age">Idade: <input 
           name="age" 
           id="age" 
@@ -56,14 +69,7 @@ class Forms extends React.Component {
           value={ age } 
           onChange={ this.handleChange } />
         </label>
-        <label htmlFor="feedback">Escreva seu Feedback: <br/>
-          <textarea 
-          placeholder="Escreva seu feeedback" 
-          name="feedback" 
-          id="feedback" 
-          value={ feedback } 
-          onChange={ this.handleChange } />
-        </label>
+        <InputFeedback feedback={ feedback } handleChange={ this.handleChange} />
         <label htmlFor="check">Gostou? <input 
           name="check" 
           id="check" 
@@ -76,6 +82,8 @@ class Forms extends React.Component {
           <img src={ src } alt='foto do usuário' />
           <input type='file' name='photo' accept=".png, .jpg" onChangeCapture={ ({ target }) => this.handlePhoto(target.files[0]) } />
         </fieldset>
+        <br/>
+        <span>{ error }</span>
       </form>
     )
   }
