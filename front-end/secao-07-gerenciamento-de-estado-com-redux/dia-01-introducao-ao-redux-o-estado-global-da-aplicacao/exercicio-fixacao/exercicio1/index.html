@@ -86,7 +86,8 @@
       });
       randomBtn.addEventListener('click', () => {
         store.dispatch({ type: 'RANDOM_COLOR' });
-    });
+      });
+      
       store.subscribe(() => {
         const { colors, index } = store.getState();
         document.getElementById('value').innerHTML = colors[index];
