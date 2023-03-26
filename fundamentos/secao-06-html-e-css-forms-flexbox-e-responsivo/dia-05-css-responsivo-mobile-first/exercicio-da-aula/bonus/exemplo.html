@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <title>Bootstrap - Layout Responsivo</title>
+  <style>
+    #blue {
+      height: 120px;
+      background-color: blue;
+    }
+    #red {
+      height: 120px;
+      background-color: red;
+    }
+    #black {
+      min-height: 400px;
+      background-color: black;
+    }
+    #yellow {
+      min-height: 400px;
+      background-color: yellow;
+    }
+    #green {
+      height: 100px;
+      background-color: green;
+    }
+    @media screen and (max-width: 576px){
+      #azul {
+        height: 60px;
+      }
+      #red {
+        height: 45px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div id="blue" class="col-sm-3 col-xs-12"></div>
+      <div id="red" class="col-sm-9 col-xs-12"></div>
+    </div>
+    <div class="row">
+      <div id="black" class="col-sm-10 col-xs-12"></div>
+      <div id="yellow" class="col-sm-2 d-none d-sm-block"></div>
+    </div>
+    <div class="row">
+      <div id="green" class="col-12"></div>
+    </div>
+  </div>
+</body>
+</html>
