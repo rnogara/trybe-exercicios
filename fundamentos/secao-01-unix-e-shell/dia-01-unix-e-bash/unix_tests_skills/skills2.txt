@@ -1,9 +1,0 @@
-Internet
-Unix
-Bash
-HTML
-CSS
-React.js
-Bootstrap
-Excel
-
