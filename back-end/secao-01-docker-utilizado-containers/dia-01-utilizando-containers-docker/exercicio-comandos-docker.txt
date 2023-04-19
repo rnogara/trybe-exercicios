@@ -1,0 +1,15 @@
+Passo 1 - Procurar o Debian no https://hub.docker.com/search?q=&type=image.
+Passo 2 - Encontrar o Debian Official.
+Passo 3 - Escrever no terminal "docker pull debian:stable-20230109-slim".
+Passo 4 - Escrever no terminal "docker container run -it debian:stable-20230109-slim".
+Passo 5 - Dentro do comando anterior digitar "cat /etc/*-release".
+Passo 6 - Dentro do comando escrever "exit".
+Passo 7 - Escrever no terminal "docker ps -l" para mostrar o ultimo container criado ou "docker ps -a" para mostrar todos.
+Passo 8 - Escrever no terminal "docker start (CONTAINER ID ou CONTAINER NAME)" e verificar se o status esta ativo.
+Passo 9 - Escrever no terminal "docker attach (CONTAINER ID ou CONTAINER NAME)".
+Passo 10 - Dentro do comando escrever "cat /etc/debian_version" e verificar se aárece a versão correta.
+Passo 11 - Dentro do comando escrever "exit".
+Passo 12 - Escrever no terminal "docker container rm (CONTAINER ID ou CONTAINER NAME)" depois "docker ps -a" e verificar se deletou.
+/////////////////////BÔNUS\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+Passo 13 - Escrever no terminal "docker run -it --rm andrius/ascii-patrol".
+Passo 14 - Encerrar o jogo com "ctrl + c" e verificar se ele encerrou com "docker container ls -a" ou "docker ps -a".
