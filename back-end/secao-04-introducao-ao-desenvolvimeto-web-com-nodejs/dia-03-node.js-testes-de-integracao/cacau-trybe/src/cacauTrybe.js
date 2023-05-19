@@ -33,6 +33,16 @@ const findChocolateByName = async (query) => {
     .filter((chocolate) => chocolate.name.toLowerCase().includes(query.toLowerCase()));
 };
 
+const writeCacauTrybeFile = async (content) => {
+  try {
+    const completePath = join(__dirname, path);
+    await fs.writeFile(completePath, JSON.stringify(content));
+  } catch (e) {
+    console.error('Erro ao salvar o arquivo', e.message);
+    return null;
+  }
+}
+
 const updateChocolate = async (id, update) => {
   const cacauTrybe = await readCacauTrybeFile();
   const chocolateToUpdate = cacauTrybe.chocolates.find(
