@@ -1,4 +1,4 @@
-### Hello World 👋.
+### Hello World 👋
 
 <br />
 
@@ -15,7 +15,7 @@
 [![Gmail](https://img.icons8.com/neon/96/gmail.png)](mailto:r.nogara.dev@gmail.com)
 [![Linkedin: Roberta Nogara](https://img.icons8.com/neon/96/linkedin.png)](https://www.linkedin.com/in/robertanogara/)
 
-<img src="https://cdn.dribbble.com/users/364116/screenshots/1899338/media/eec1961f07ec63787115fc1226c63fad.gif"  />
+<img align="right" src="https://github.blog/wp-content/uploads/2018/10/46896184-b679fc80-ce30-11e8-88bf-921e9b788f7c.gif?resize=200%2C200"  />
 
 
 **Languages and Tools**  
@@ -50,5 +50,3 @@
 <br />
 <br />
 icons by <a href="https://icons8.com">Icons8</a>
-<br />
- <a href=”https://dribbble.com/shots/1899338-Yogocat-Animation”>yogocat</a> by Nadiia Uba 
