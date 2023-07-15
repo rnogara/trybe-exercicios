@@ -4,7 +4,7 @@
 
 **Personal**
 - 🖥️ I am a **fullstack developer**
-- Currently a student at [Trybe](https://www.betrybe.com/),
+- 📖 Currently a student at [Trybe](https://www.betrybe.com/),
 - ❤️ Things I like **reading, games, animes, star wars, and lord of the rings.** 
 - 🌾 I used to work as a **drone pilot** in agribusiness,
 - 🎓 I have a bachelor's degree in **forest engineering**,
@@ -15,7 +15,7 @@
 [![Gmail](https://img.icons8.com/neon/96/gmail.png)](mailto:r.nogara.dev@gmail.com)
 [![Linkedin: Roberta Nogara](https://img.icons8.com/neon/96/linkedin.png)](https://www.linkedin.com/in/robertanogara/)
 
-<img src="https://cdn.dribbble.com/users/364116/screenshots/1899338/yogocat_animation.gif"  />
+<img src="https://cdn.dribbble.com/users/364116/screenshots/1899338/media/eec1961f07ec63787115fc1226c63fad.gif"  />
 
 
 **Languages and Tools**  
@@ -47,4 +47,4 @@
 <br />
 icons by <a href="https://icons8.com">Icons8</a>
 <br />
- <a hef=”https://dribbble.com/shots/1899338-Yogocat-Animation”>yogocat</a> by Nadiia Uba 
+ <a href=”https://dribbble.com/shots/1899338-Yogocat-Animation”>yogocat</a> by Nadiia Uba 
