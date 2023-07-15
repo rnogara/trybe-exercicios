@@ -32,7 +32,7 @@
 <code><img width="48" height="48" src="https://cdn.icon-icons.com/icons2/2415/PNG/512/sequelize_original_logo_icon_146348.png" alt="sequelize"/></code>
 <code><img width="48" height="48" src="https://img.icons8.com/fluency/48/typescript--v2.png" alt="typescript--v2"/></code>
 <code><img width="48" height="48" src="https://img.icons8.com/color/48/java-web-token.png" alt="java-web-token"/></code>
-<img align="right"  src="https://github-readme-stats.vercel.app/api?username=rnogara&count_private=true&show_icons=true" alt="Roberta Nogara" />
+<img align="right"  
 
 **Planning to Learning**
 
@@ -40,10 +40,14 @@
 <code><img width="48" height="48" src="https://img.icons8.com/fluency/48/java-coffee-cup-logo.png" alt="java-coffee-cup-logo"/><img height="20" src="https://cdn.jsdelivr.net/npm/simple-icons@3.12.2/icons/django.svg"></code>
 <code><img width="48" height="48" src="https://img.icons8.com/fluency/48/c-sharp-logo.png" alt="c-sharp-logo"/></code>
 
+<br />
+src="https://github-readme-stats.vercel.app/api?username=rnogara&count_private=true&show_icons=true" alt="Roberta Nogara" />
+
 📊 **My recent programming status:**
 <!--START_SECTION:waka-->
 <!--END_SECTION:waka-->
 
+<br />
 <br />
 icons by <a href="https://icons8.com">Icons8</a>
 <br />
