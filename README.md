@@ -2,6 +2,8 @@
 
 <br />
 
+<img align="right" src="https://github.blog/wp-content/uploads/2018/10/46896184-b679fc80-ce30-11e8-88bf-921e9b788f7c.gif?resize=200%2C200"  />
+
 **Personal**
 - 🖥️ I am a **fullstack developer**
 - 📖 Currently a student at [Trybe](https://www.betrybe.com/),
@@ -9,8 +11,6 @@
 - 🌾 I used to work as a **drone pilot** in agribusiness,
 - 🎓 I have a bachelor's degree in **forest engineering**,
 - 💬 If you have any questions, **just ask me**.
-
-<img align="right" src="https://github.blog/wp-content/uploads/2018/10/46896184-b679fc80-ce30-11e8-88bf-921e9b788f7c.gif?resize=200%2C200"  />
 
 <br />
 
