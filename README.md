@@ -10,13 +10,12 @@
 - 🎓 I have a bachelor's degree in **forest engineering**,
 - 💬 If you have any questions, **just ask me**.
 
+<img align="right" src="https://github.blog/wp-content/uploads/2018/10/46896184-b679fc80-ce30-11e8-88bf-921e9b788f7c.gif?resize=200%2C200"  />
+
 <br />
 
 [![Gmail](https://img.icons8.com/neon/96/gmail.png)](mailto:r.nogara.dev@gmail.com)
 [![Linkedin: Roberta Nogara](https://img.icons8.com/neon/96/linkedin.png)](https://www.linkedin.com/in/robertanogara/)
-
-<img align="right" src="https://github.blog/wp-content/uploads/2018/10/46896184-b679fc80-ce30-11e8-88bf-921e9b788f7c.gif?resize=200%2C200"  />
-
 
 **Languages and Tools**  
 
