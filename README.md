@@ -13,9 +13,9 @@
 <br />
 
 [![Gmail](https://img.icons8.com/neon/96/gmail.png)](mailto:r.nogara.dev@gmail.com)
-[![Linkedin: Roberta Nogara](ttps://img.icons8.com/neon/96/linkedin.pn)](https://www.linkedin.com/in/robertanogara/)
+[![Linkedin: Roberta Nogara](https://img.icons8.com/neon/96/linkedin.png)](https://www.linkedin.com/in/robertanogara/)
 
-<img align=”right” src="https://cdn.dribbble.com/users/364116/screenshots/1899338/yogocat_animation.gif"  alt=”yogocat by Nadiia Uba”/>
+<img src="https://cdn.dribbble.com/users/364116/screenshots/1899338/yogocat_animation.gif"  alt=”yogocat by Nadiia Uba”/>
 
 
 **Languages and Tools**  
@@ -46,4 +46,5 @@
 
 <br />
 icons by <a href="https://icons8.com">Icons8</a>
+<br />
  <a hef=”https://dribbble.com/shots/1899338-Yogocat-Animation”>yogocat</a> by Nadiia Uba 
