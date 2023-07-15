@@ -15,7 +15,7 @@
 [![Gmail](https://img.icons8.com/neon/96/gmail.png)](mailto:r.nogara.dev@gmail.com)
 [![Linkedin: Roberta Nogara](https://img.icons8.com/neon/96/linkedin.png)](https://www.linkedin.com/in/robertanogara/)
 
-<img src="https://cdn.dribbble.com/users/364116/screenshots/1899338/yogocat_animation.gif"  alt=”yogocat by Nadiia Uba”/>
+<img src="https://cdn.dribbble.com/users/364116/screenshots/1899338/yogocat_animation.gif"  />
 
 
 **Languages and Tools**  
